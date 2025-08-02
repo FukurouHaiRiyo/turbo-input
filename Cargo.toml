@@ -1,0 +1,32 @@
+[package]
+name = "turbo-input"
+version = "0.1.0"
+edition = "2024"
+authors = ["Andrei-Stefan Panait andreipanait00@gmail.com"]
+description = "A fast scanner library for competitive programming in Rust"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/yourusername/turbo-input"
+homepage = "https://github.com/yourusername/turbo-input"
+documentation = "https://docs.rs/turbo-input"
+readme = "README.md"
+keywords = ["competitive-programming", "scanner", "input", "parsing", "contest"]
+categories = ["parsing", "algorithms"]
+exclude = [
+    "/.github/*",
+    "/examples/*",
+    "/tests/*",
+]
+
+[dependencies]
+# No dependencies - uses only std library for maximum compatibility
+
+[dev-dependencies]
+# Add development dependencies if needed for testing
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
+
+[[example]]
+name = "contest_template"
+path = "examples/contest_template.rs"
