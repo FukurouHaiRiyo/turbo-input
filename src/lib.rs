@@ -10,7 +10,7 @@ use std::io::BufRead;
 /// 
 /// ```
 /// use std::io;
-/// use competitive_scanner::Scanner;
+/// use turbo_input::Scanner;
 /// 
 /// let input = "42 3.14 hello\n1 2 3\n";
 /// let mut scanner = Scanner::new(input.as_bytes());
@@ -42,7 +42,7 @@ impl<R: BufRead> Scanner<R> {
     /// 
     /// ```
     /// use std::io;
-    /// use competitive_scanner::Scanner;
+    /// use turbo_input::Scanner;
     /// 
     /// // From stdin
     /// let stdin = io::stdin();
@@ -72,7 +72,7 @@ impl<R: BufRead> Scanner<R> {
     /// # Examples
     /// 
     /// ```
-    /// use competitive_scanner::Scanner;
+    /// use turbo_input::Scanner;
     /// 
     /// let input = "42 3.14 hello";
     /// let mut scanner = Scanner::new(input.as_bytes());
@@ -113,7 +113,7 @@ impl<R: BufRead> Scanner<R> {
     /// # Examples
     /// 
     /// ```
-    /// use competitive_scanner::Scanner;
+    /// use turbo_input::Scanner;
     /// 
     /// let input = "1 2 3 4 5";
     /// let mut scanner = Scanner::new(input.as_bytes());
@@ -135,7 +135,7 @@ impl<R: BufRead> Scanner<R> {
     /// # Examples
     /// 
     /// ```
-    /// use competitive_scanner::Scanner;
+    /// use turbo_input::Scanner;
     /// 
     /// let input = "1 2 3\n4 5 6";
     /// let mut scanner = Scanner::new(input.as_bytes());
@@ -152,7 +152,7 @@ impl<R: BufRead> Scanner<R> {
     /// # Examples
     /// 
     /// ```
-    /// use competitive_scanner::Scanner;
+    /// use turbo_input::Scanner;
     /// 
     /// let input = "hello";
     /// let mut scanner = Scanner::new(input.as_bytes());
@@ -169,7 +169,7 @@ impl<R: BufRead> Scanner<R> {
     /// # Examples
     /// 
     /// ```
-    /// use competitive_scanner::Scanner;
+    /// use turbo_input::Scanner;
     /// 
     /// let input = "hello world";
     /// let mut scanner = Scanner::new(input.as_bytes());
@@ -200,7 +200,7 @@ impl<R: BufRead> Scanner<R> {
     /// # Examples
     /// 
     /// ```
-    /// use competitive_scanner::Scanner;
+    /// use turbo_input::Scanner;
     /// 
     /// // Undirected graph: 1-2, 2-3
     /// let input = "1 2\n2 3";

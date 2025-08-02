@@ -1,5 +1,5 @@
 [package]
-name = "turbo-input"
+name = "turbo_input"
 version = "0.1.0"
 edition = "2024"
 authors = ["Andrei-Stefan Panait andreipanait00@gmail.com"]
