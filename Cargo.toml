@@ -9,7 +9,7 @@ repository = "https://github.com/FukurouHaiRiyo/turbo-input"
 homepage = "https://github.com/FukurouHaiRiyo/turbo-input"
 documentation = "https://docs.rs/turbo-input"
 readme = "README.md"
-keywords = ["competitive, programming", "scanner", "input", "parsing", "contest"]
+keywords = ["competitive", "programming", "scanner", "input", "parsing", "contest"]
 categories = ["parsing", "algorithms"]
 exclude = [
     "/.github/*",
