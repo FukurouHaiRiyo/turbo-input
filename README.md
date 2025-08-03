@@ -176,4 +176,4 @@ This project is licensed under
 
 - Initial release
 - Basic scanner functionality
-- Support for tokens, vectors, matrices, chars, strings, and graphs#
+- Support for tokens, vectors, matrices, chars, strings, and graphs
