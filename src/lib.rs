@@ -184,6 +184,35 @@ impl<R: BufRead> Scanner<R> {
         self.token::<String>()
     }
 
+    /// Reads a full line as a single string, trimming newline
+    /// 
+    /// # Examples
+    /// 
+    /// ```
+    /// use turbo_input::Scanner;
+    /// 
+    /// let input = "line one\nline two";
+    /// let mut scanner = Scanner::new(input.as_bytes());
+    /// 
+    /// assert_eq!(scanner.read_line(), "line one");
+    /// assert_eq!(scanner.read_line(), "line two");
+    /// ```
+    pub fn read_line(&mut self) -> String {
+        self.buffer.clear();
+        let mut line = String::new();
+        self.reader.read_line(&mut line).expect("Failed to read line");
+        line.trim_end().to_string()
+    }
+
+    /// Reads multiple lines as a vector of strings
+    /// 
+    /// # Arguments
+    /// 
+    /// * `n` - Number of lines to read
+    pub fn read_lines(&mut self, n: usize) -> Vec<String> {
+        (0..n).map(|_| self.read_line()).collect()
+    }
+
     /// Reads a graph representation and returns an adjacency list
     /// 
     /// # Arguments
@@ -305,5 +334,23 @@ mod tests {
         assert_eq!(graph[1], vec![2]);
         assert_eq!(graph[2], vec![3]);
         assert_eq!(graph[3], vec![]);
+    }
+
+    #[test]
+    fn test_read_line() {
+        let input = "first line\nsecond line\n";
+        let mut scanner = Scanner::new(input.as_bytes());
+
+        assert_eq!(scanner.read_line(), "first line");
+        assert_eq!(scanner.read_line(), "second line");
+    }
+
+    #[test]
+    fn test_read_lines() {
+        let input = "one\ntwo\nthree\n";
+        let mut scanner = Scanner::new(input.as_bytes());
+
+        let lines = scanner.read_lines(3);
+        assert_eq!(lines, vec!["one", "two", "three"]);
     }
 }
