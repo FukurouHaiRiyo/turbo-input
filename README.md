@@ -170,7 +170,7 @@ This project is licensed under
 
 ## Important Note
 
-This project was made so I can learn Rust and to have a better understanding on howuser input works in Rust, any suggestions/advice and forks are more than welcome
+This project was made so I can learn Rust and to have a better understanding on howuser input works in Rust, any suggestions/advice and forks are more than welcome.
 
 ## Changelog
 
