@@ -180,6 +180,9 @@ This project was made so I can learn Rust and to have a better understanding on 
 - Basic scanner functionality
 - Support for tokens, vectors, matrices, chars, strings, and graphs
 
-### 0.1.0
+### 0.1.1
 
 - Bug fixes
+
+### 0.1.2
+- README changes
