@@ -4,7 +4,6 @@
 A fast and efficient scanner library for competitive programming in Rust. This library provides convenient methods for reading various types of input commonly encountered in programming contests.
 
 
-
 ## Features
 
 - Fast input reading with internal buffering
@@ -169,6 +168,9 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 This project is licensed under
 - [MIT](https://choosealicense.com/licenses/mit/) license
 
+## Important Note
+
+This project was made so I can learn Rust and to have a better understanding on howuser input works in Rust, any suggestions/advice and forks are more than welcome
 
 ## Changelog
 
@@ -177,3 +179,7 @@ This project is licensed under
 - Initial release
 - Basic scanner functionality
 - Support for tokens, vectors, matrices, chars, strings, and graphs
+
+### 0.1.0
+
+- Bug fixes
