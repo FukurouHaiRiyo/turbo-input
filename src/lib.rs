@@ -1,4 +1,4 @@
-use std::io::BufRead;
+use std::io::{self, BufRead, BufReader};
 
 /// A fast scanner for competitive programming
 /// 
